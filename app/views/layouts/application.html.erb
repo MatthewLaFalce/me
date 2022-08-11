@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html class="h-100">
+  <head>
+    <%= render 'shared/head' %>
+    <script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js"></script>
+  </head>
+
+  <body class=" flex flex-col  h-screen">
+    <%= render 'shared/navbar' %>
+
+    <main class="container mx-auto flex-grow">
+      <%= yield %>
+    </main>
+
+    <%= render 'shared/footer' %>
+  </body>
+</html>

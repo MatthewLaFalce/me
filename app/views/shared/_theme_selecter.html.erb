@@ -1,0 +1,9 @@
+<% options = %w(light dark cupcake bumblebee emerald corporate synthwave retro cyberpunk valentine halloween garden forest aqua lofi pastel fantasy wireframe black luxury dracula cmyk autumn business acid lemonade night coffee winter) %>
+
+<select data-choose-theme class="select select-accent">
+  <option disabled selected>What's your theme?</option>
+  <option value="default">Default</option>
+  <% options.each do |option| %>
+    <option value=<%= option %>><%= option.humanize %></option>
+  <% end %>
+</select>
