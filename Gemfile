@@ -31,3 +31,5 @@ end
 gem "font-awesome-sass", "~> 6.2.0"
 
 gem "awesome_print", "~> 1.9"
+
+gem "faraday-retry", "~> 2.0"

@@ -84,6 +84,8 @@ GEM
       faraday-net_http (>= 2.0, < 3.1)
       ruby2_keywords (>= 0.0.4)
     faraday-net_http (3.0.0)
+    faraday-retry (2.0.0)
+      faraday (~> 2.0)
     ffi (1.15.5)
     font-awesome-sass (6.2.0)
       sassc (~> 2.0)
@@ -216,6 +218,7 @@ DEPENDENCIES
   awesome_print (~> 1.9)
   bootsnap
   debug
+  faraday-retry (~> 2.0)
   font-awesome-sass (~> 6.2.0)
   graphql-client
   importmap-rails
