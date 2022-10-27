@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby "3.1.1"
+ruby "3.1.2"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.3", ">= 7.0.3.1"
@@ -16,6 +16,8 @@ gem "redis", "~> 4.0" # Use Redis adapter to run Action Cable in production
 gem "bootsnap", require: false # Reduces boot times through caching; required in config/boot.rb
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
+gem "octokit", "~> 5.0"
+gem 'graphql-client'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
@@ -26,3 +28,6 @@ group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
 end
+gem "font-awesome-sass", "~> 6.2.0"
+
+gem "awesome_print", "~> 1.9"
